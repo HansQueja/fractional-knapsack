@@ -27,7 +27,7 @@ def fractional_knapsack(stock_list, remaining_budget):
         else:
             fraction_cost = remaining_budget / stock_list[count].price
             total_profit += round(fraction_cost * stock_list[count].profit, 3)
-            print(f"\tName: {stock_list[count].name}\n\tPrice: {fraction_cost}\n\tProfit: {total_profit}\n")
+            print(f"\tName: {stock_list[count].name}\n\tPrice: {fraction_cost}\n\tProfit: {round(fraction_cost * stock_list[count].profit, 3)}\n")
             break
     
     # Show the total profit we've accumulated
