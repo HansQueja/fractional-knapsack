@@ -1,7 +1,6 @@
 
 from helpers.menu import menu
 from helpers.knapsack import fractional_knapsack
-from helpers.stock import Stock
 
 def stock_application():
     
