@@ -1,0 +1,20 @@
+{
+    "stocks": [
+      {
+        "name": "TechNova Inc.",
+        "price": 152.75,
+        "profit": 12.4
+      },
+      {
+        "name": "GreenCore Ltd.",
+        "price": 89.30,
+        "profit": 8.7
+      },
+      {
+        "name": "AeroDyn Corp.",
+        "price": 230.15,
+        "profit": 15.1
+      }
+    ]
+  }
+  
