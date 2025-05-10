@@ -12,9 +12,11 @@ def fractional_knapsack(stock_list, remaining_budget):
     total_profit = 0
     
     print("==============================================================================\n")
+    print("\tRunning Fractional Knapsack on your Stocks List...\n")
+    print("\tComputing greedy approach...\n")
 
     # Choose the stock with the largest ROI
-    while count < len(stock_list):
+    while remaining_budget > 0 and count < len(stock_list):
 
         print(f"\tInvested Stock #{count + 1}")
 
@@ -37,6 +39,7 @@ def fractional_knapsack(stock_list, remaining_budget):
             break
     
     # Show the total profit we've accumulated
+    print("------------------------------------------------------------------------------\n")
     print(f"\tTotal profit: Php. {total_profit}")
     print(f"\tTotal number of stocks: {count}")
     print("\n==============================================================================\n")
