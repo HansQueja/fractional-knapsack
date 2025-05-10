@@ -2,14 +2,16 @@
 import json
 from helpers.stock import Stock
 
+# Menu function to get the user's budget and stock items
 def menu():
     option = 0
 
     while option not in [1, 2, 3]:
         print("==============================================================================")
         print("\n\tWelcome to your trusted Stock Portfolio Evaluator!")
-
         print("\tWhat's your total budget (in Peso) for this instance?")
+
+        # Get a valid budget input from the user
         try:
             budget = float(input("\t=> "))
             if budget < 100:
@@ -24,6 +26,7 @@ def menu():
         print("\t[2] Read an existing JSON file")
         print("\t[3] Quit the program\n")
 
+        # Get a valid integer input from the user
         try:
             option = int(input("\t=> "))
             if option not in [1, 2, 3]:
@@ -41,14 +44,19 @@ def menu():
             print(f"\tWARNING: {e}")
 
 
+# Function to get the stock items manually from the user iteratively
 def manual_input():
     print("==============================================================================")
     
+    # Loop until all said number of items are taken
     while True:
         print("\tHow many stock items are you going to enter?\n")
+
+        # Get a valid integer input for the number of items
         try:
             stock_count = int(input("\t=> "))
 
+            # Program requires at least two input values.
             if stock_count < 2:
                 print("\tWarning: You need to enter at least two items. Please try again.")
                 continue
@@ -56,6 +64,7 @@ def manual_input():
             stock_list = []
             count = 0
 
+            # Loop through number of stocks
             while count < stock_count:
                 print(f"\n\tSTOCK #{count+1}\n")
                 
@@ -75,17 +84,22 @@ def manual_input():
             print("\tWarning: You need to enter a valid number of items. Please try again.")
 
 
+# Function to get the user's stock list through a JSON file in the /data directory
 def json_input():
     print("==============================================================================")
     
+    # Loop until proper file is given
     while True:
         print("\n\tWhat's your JSON's file name?")
         file_name = 'data/' + input("\t=> ")
         
+        # Require user to upload a JSON file
         if ".json" not in file_name:
             print("\tWARNING: File needs to be of JSON type. Please try again.")
             continue
 
+        # Try to open and read the contents of JSON file.
+        # If the file is invalid, missing, or empty, return an error
         try:
             with open(file_name, 'r') as file:
                 data = json.load(file)
