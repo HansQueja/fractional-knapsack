@@ -1,0 +1,65 @@
+{
+    "stocks": [
+      {
+        "name": "TechNova Inc.",
+        "price": 152.75,
+        "profit": 12.4
+      },
+      {
+        "name": "GreenCore Ltd.",
+        "price": 89.30,
+        "profit": 8.7
+      },
+      {
+        "name": "AeroDyn Corp.",
+        "price": 230.15,
+        "profit": 15.1
+      },
+      {
+        "name": "SolarEdge Solutions",
+        "price": 110.00,
+        "profit": 10.5
+      },
+      {
+        "name": "CyberLink Systems",
+        "price": 98.40,
+        "profit": 7.3
+      },
+      {
+        "name": "AgriFuture Holdings",
+        "price": 67.25,
+        "profit": 6.2
+      },
+      {
+        "name": "QuantumLeap Co.",
+        "price": 345.90,
+        "profit": 27.8
+      },
+      {
+        "name": "MedTech Enterprises",
+        "price": 205.10,
+        "profit": 14.6
+      },
+      {
+        "name": "EcoTrans Logistics",
+        "price": 120.60,
+        "profit": 9.9
+      },
+      {
+        "name": "NovaTerra Real Estate",
+        "price": 415.00,
+        "profit": 32.0
+      },
+      {
+        "name": "ByteWave Digital",
+        "price": 56.85,
+        "profit": 4.4
+      },
+      {
+        "name": "Altura Minerals",
+        "price": 139.99,
+        "profit": 11.3
+      }
+    ]
+  }
+  
