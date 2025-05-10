@@ -1,4 +1,5 @@
 
+# Acts as the stock data structure containing the stock's name, price, profit, and ROI
 class Stock:
     def __init__(self, name, price, profit):
         self.name = name
