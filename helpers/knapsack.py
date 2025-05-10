@@ -14,7 +14,7 @@ def fractional_knapsack(stock_list, remaining_budget):
     total_profit = 0
 
     # Choose the stock with the largest ROI
-    while True and count < len(stock_list):
+    while count < len(stock_list):
 
         # If stock price is within the remaining budget, invest in the stock
         if stock_list[count].price <= remaining_budget:
